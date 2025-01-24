@@ -1,7 +1,11 @@
-<main class="main">
-	<div class="content">
+<div class="app-layout">
+	<div class="app-layout-wrapper">
+		<tt-header></tt-header>
 
+		<div class="app-layout-body-wrapper d-flex">
+			<div class="app-layout-body">
+				<router-outlet></router-outlet>
+			</div>
+		</div>
 	</div>
-</main>
-
-<router-outlet />
+</div>

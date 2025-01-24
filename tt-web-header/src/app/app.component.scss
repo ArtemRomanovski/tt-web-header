@@ -1,0 +1,28 @@
+.app-layout {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+
+	&-wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&-header {
+		flex-shrink: 0;
+	}
+
+	&-body {
+		height: 100%;
+		flex-grow: 1;
+		overflow: hidden;
+
+		&-wrapper {
+			height: 100%;
+			flex-grow: 1;
+			overflow: hidden;
+		}
+	}
+}

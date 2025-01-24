@@ -1,0 +1,38 @@
+@import 'index';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	height: 100vh;
+	font-family: $tt-font-primary;
+	background-color: $tt-color-primary-1;
+	color: $tt-color-primary-4;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+ul {
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+li {
+	list-style: none;
+}

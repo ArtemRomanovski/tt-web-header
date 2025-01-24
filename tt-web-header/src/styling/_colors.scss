@@ -1,0 +1,16 @@
+$tt-color-header-primary: #1074CC;
+
+$tt-color-notification-primary: #CC1910;
+
+$tt-color-primary: #FFFFFF;
+$tt-color-primary-shades: (
+	'': $tt-color-primary,
+	1: #F5F5F5,
+	2: #9AA1A6,
+	3: #7F878C,
+	4: #2A3033,
+);
+$tt-color-primary-1: map-get($tt-color-primary-shades, 1);
+$tt-color-primary-2: map-get($tt-color-primary-shades, 2);
+$tt-color-primary-3: map-get($tt-color-primary-shades, 3);
+$tt-color-primary-4: map-get($tt-color-primary-shades, 4);

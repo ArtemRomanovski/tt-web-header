@@ -1,0 +1,30 @@
+@import './variables';
+
+// > 1920
+@mixin screen-x-large-desktop {
+	@media screen and (min-width: $screen-x-large-desktop) {
+		@content;
+	}
+}
+  
+// 1440 - 1920
+@mixin screen-x-medium-desktop {
+	@media screen and (min-width: $screen-medium-desktop) and (max-width: calc(#{$screen-x-large-desktop} - 1px)) {
+		@content;
+	}
+}
+
+// < 414 portrait
+@mixin screen-small-handset-portrait {
+	@media screen and (min-width: $screen-handset-portrait) and (max-width: calc(#{$screen-handset-portrait} - 1px)) and (orientation: portrait) {
+		@content;
+	}
+}
+  
+  // < 896 landscape
+  @mixin screen-small-handset-landscape {
+	@media screen and (min-width: $screen-handset-landscape) and (max-width: calc(#{$screen-handset-landscape} - 1px)) and (orientation: landscape) {
+		@content;
+	}
+}
+  

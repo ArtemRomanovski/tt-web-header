@@ -1,0 +1,24 @@
+// typography
+$tt-font-primary: Roboto, "Helvetica Neue", sans-serif;
+
+// screen 
+$screen-size-0: 1920px;
+$screen-size-1: 1440px;
+$screen-size-2: 414px;
+$screen-size-3: 414px;
+
+$screens: (
+  // 1920px
+  "x-large-desktop": $screen-size-0,
+  // 1440px
+  "medium-desktop": $screen-size-1,
+  // 896px
+  "handset-landscape": $screen-size-2,
+  // 414px
+  "handset-portrait": $screen-size-3,
+);
+
+$screen-x-large-desktop: map-get($screens, "x-large-desktop");
+$screen-medium-desktop: map-get($screens, "medium-desktop");
+$screen-handset-landscape: map-get($screens, "handset-landscape");
+$screen-handset-portrait: map-get($screens, "handset-portrait");
