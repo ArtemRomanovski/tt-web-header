@@ -7,24 +7,30 @@
 	}
 }
   
-// 1440 - 1920
-@mixin screen-x-medium-desktop {
+// 896 - 1920
+@mixin screen-medium-desktop {
 	@media screen and (min-width: $screen-medium-desktop) and (max-width: calc(#{$screen-x-large-desktop} - 1px)) {
+		@content;
+	}
+}
+
+// < 896 portrait and < 896 landscape
+@mixin screen-all-mobiles {
+	@media screen and (max-width: calc(#{$screen-medium-desktop} - 1px)) {
 		@content;
 	}
 }
 
 // < 414 portrait
 @mixin screen-small-handset-portrait {
-	@media screen and (min-width: $screen-handset-portrait) and (max-width: calc(#{$screen-handset-portrait} - 1px)) and (orientation: portrait) {
+	@media screen and (min-width: $screen-handset-portrait) and (max-width: calc(#{$screen-medium-desktop} - 1px)) and (orientation: portrait) {
 		@content;
 	}
 }
   
   // < 896 landscape
   @mixin screen-small-handset-landscape {
-	@media screen and (min-width: $screen-handset-landscape) and (max-width: calc(#{$screen-handset-landscape} - 1px)) and (orientation: landscape) {
+	@media screen and (min-width: $screen-handset-portrait) and (max-width: calc(#{$screen-medium-desktop} - 1px)) and (orientation: landscape) {
 		@content;
 	}
 }
-  
