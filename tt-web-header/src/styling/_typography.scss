@@ -1,6 +1,6 @@
 @mixin font-style(
 	$font-size: 14px,
-	$letter-spacing: 1px,
+	$letter-spacing: 0%,
 	$line-height: 1px,
 	$font-weight: 400
 ) {
@@ -8,4 +8,16 @@
 	font-weight: $font-weight !important;
 	line-height: $line-height !important;
 	letter-spacing: $letter-spacing !important;
+}
+
+.tt-caption-small {
+	@include font-style(11, 0.1, 14, 500)
+}
+
+.tt-caption-medium {
+	@include font-style(12, 0.4, 16, 500)
+}
+
+.tt-body-medium {
+	@include font-style(14, 0.25, 20, 400)
 }

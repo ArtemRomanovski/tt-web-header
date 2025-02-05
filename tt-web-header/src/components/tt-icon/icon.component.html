@@ -1,0 +1,9 @@
+<ng-container>
+  <ng-container *ngIf="iconClass">
+    <i class="fontello-icon" [class]="iconClass" ></i>
+  </ng-container>
+
+  <span #icon class="fontello-content">
+    <ng-content></ng-content>
+  </span>
+</ng-container>

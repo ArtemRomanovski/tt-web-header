@@ -1,48 +1,69 @@
 <div class="header-container">
-	<div class="navigation-container d-flex">
-		<div class="logo-container d-flex-center-between">
+	<div class="navigation-container d-flex-center-start g-16">
+		<div class="logo-container d-flex">
 			<img class="logo" src="static/assets/logo.png" alt="Tile.Expert Logo" width="150" height="56" />
 		</div>
 
-		<div class="tabs-container-wrapper">
-			<div class="tabs-container">
+		<div class="tabs-container-wrapper d-flex">
+			<div class="tabs-container d-flex">
 				<ul class="tabs">
 					<li class="tab">
-						<!--<tt-icon class="tab-icon"></tt-icon>-->
+						<tt-icon class="tab-icon">icon-link</tt-icon>
 						<span>Ссылки</span>
 					</li>
 					<li class="tab">
-						<!--<tt-icon class="tab-icon"></tt-icon>-->
+						<tt-icon class="tab-icon">icon-contacts</tt-icon>
 						<span>Контакты</span>
 					</li>
 					<li class="tab">
-						<!--<tt-icon class="tab-icon"></tt-icon>-->
+						<tt-icon class="tab-icon">icon-tag</tt-icon>
 						<span>Теги</span>
 					</li>
 					<li class="tab">
-						<!--<tt-icon class="tab-icon"></tt-icon>-->
+						<tt-icon class="tab-icon">icon-favorites</tt-icon>
 						<span>Избранное</span>
 					</li>
 					<li class="tab">
-						<!--<tt-icon class="tab-icon"></tt-icon>-->
+						<tt-icon class="tab-icon">icon-history</tt-icon>
 						<span>Посещения</span>
 					</li>
 				</ul>
 			</div>
-			<div class="buttons-container">
-				<div> search </div>
-				<div> + </div>
+			<div class="buttons-container d-flex">
+				<div>
+					<button
+						class="tt-btn-icon"
+						(click)="test()"
+					>
+						<tt-icon class="tab-icon">icon-search</tt-icon>
+					</button>
+				</div>
+				<div>
+					<button
+						class="tt-btn-icon"
+						(click)="test()"
+					>
+					<tt-icon class="tab-icon">icon-plus-circle</tt-icon>
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="d-flex">
+	<div class="d-flex mt-8 mb-8">
 		<div class="notifications">
-			bell
+			<button
+				class="tt-btn-icon"
+				(click)="test()"
+			>
+			<tt-icon class="tt-btn-icon">icon-notifications</tt-icon>
+			</button>
 		</div>
 
 		<div class="user-menu">
-			user
+			<div class="-userpic">
+				<!--<img [src]="" />-->
+			</div>
 		</div>
 	</div>
 

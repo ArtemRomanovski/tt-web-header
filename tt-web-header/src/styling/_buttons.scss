@@ -1,0 +1,33 @@
+@import './variables';
+@import './colors';
+@import './typography';
+
+@mixin button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	font-family: $tt-font-primary;
+	border: 1px solid transparent;
+	border-radius: $border-radius;
+	transition: all 0.3s;
+
+	@include font-style(14px, 0.3px, 18px, 400);
+}
+
+@mixin button-icon {
+	@include button;
+}
+
+.tt-btn {
+	@include button;
+
+	&-icon {
+		@include button-icon;
+		
+		padding: 8px;
+		color: $tt-color-primary-1;
+		background-color: transparent !important;
+		border: 0 !important;
+	}
+}

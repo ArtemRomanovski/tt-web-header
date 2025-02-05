@@ -1,0 +1,30 @@
+@import "typography";
+
+:host {
+  display: flex;
+}
+
+.fontello {
+  &-icon {
+    @include font-style(24px, 1px, 1px, normal);
+
+    height: 24px;
+    width: 24px;
+    user-select: none;
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+
+    &:before {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  &-content {
+    display: none;
+  }
+}

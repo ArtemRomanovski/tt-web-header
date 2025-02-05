@@ -1,6 +1,17 @@
 // typography
 $tt-font-primary: Roboto, "Helvetica Neue", sans-serif;
 
+// layout
+$size-1: 2px;
+$size-2: $size-1 * 2; // 4px
+$size-3: $size-1 * 4; // 8px
+$size-4: $size-1 * 6; // 12px
+$size-5: $size-1 * 8; // 16px
+$size-6: $size-1 * 12; // 24px
+$size-7: $size-1 * 14; // 28px
+$size-8: $size-1 * 16; // 32px
+$size-9: $size-1 * 18; // 56px
+
 // screen 
 $screen-size-0: 1920px;
 $screen-size-1: 896px;
@@ -18,3 +29,9 @@ $screens: (
 $screen-x-large-desktop: map-get($screens, "large-desktop");
 $screen-medium-desktop: map-get($screens, "medium-desktop");
 $screen-handset-portrait: map-get($screens, "handset-portrait");
+
+// header
+$tt-header-height: 56px;
+
+// border
+$border-radius: 50%;

@@ -28,6 +28,9 @@
       "@tt/components": ["src/components"],
       "@tt/styling": ["src/styling/index.ts"],
       "@tt/data": ["src/data/index.ts"],
+      "@tt/icons": [
+        "src/styling/fonts/fontello/css/fontello.css"
+      ],
     }
   },
   "angularCompilerOptions": {

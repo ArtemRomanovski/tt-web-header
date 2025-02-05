@@ -37,11 +37,15 @@
             ],
             "styles": [
               "src/styling/index.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styling/fonts/css/fontello.css"
             ],
             "scripts": [],
             "stylePreprocessorOptions": {
-              "includePaths": ["src/styling"]
+              "includePaths": [
+                "src/styling",
+                "src/assets/fonts"
+              ]
             }
           },
           "configurations": {
